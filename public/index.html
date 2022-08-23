@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="bg-slate-900">
+    <section class="container ">
+
+      <video
+      id="weather"
+        src="/public/videos/video.mp4"
+        autoplay
+        muted
+        loop
+        class="absolute  top-0 left-0 object-fill md:object-cover w-full h-full"
+      ></video>
+      <div class=" backdrop-blur-md p-10 absolute bottom-5 left-2 border drop-shadow-lg flex flex-col justify-around items-center gap-5 md:flex-row ">
+        <h1 class="text-3xl font-bold text-slate-200 z-10 md:text-6xl">Temp&#176</h1>
+        <div class="text-center">
+          
+          <h2 class="text-md text-slate-200 z-10 md:text-5xl">Location </h2>
+          
+          <p class="text-sm text-slate-200 mt-4">Coordinates</p>
+        </div>
+        
+        <img src="" alt="" srcset="">
+        <span id="desc"class="text-lg text-slate-200"></span>
+      </div>
+      <span id="country"class="text-lg text-slate-200 absolute bottom-8 right-10">country</span>
+
+
+      <div class="backdrop-blur-sm p-10 absolute   border drop-shadow-lg top-5 right-2 ">
+        <label for="" class="text-slate-200 m-2">Search City</label>
+        <input id="search" type="text" class="outline-none bg-origin-content rounded-md text-slate-900 p-1">
+        
+      </div>
+      
+    </section>
+
+
+    <script src="js/utility.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
